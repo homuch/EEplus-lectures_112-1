@@ -1,118 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-  </head>
-  <body>
-    <nav>
-      <a id="nav-title" href="https://google.com">My Blogger</a>
-      <div id="nav-button-container">
-        <button type="button">New Post</button>
-        <button type="button">Search</button>
-        <button type="button">Log In</button>
-        <button type="button">Sign Up</button>
-      </div>
-    </nav>
-    <div id="post-card-container">
-      <div class="post-card">
-        <img
-          class="post-image"
-          src="https://picsum.photos/400/300"
-          alt="post image"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blogger</title>
+  <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/nav-bar.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/main-area.css" />
+</head>
+
+<body>
+  <header>
+    <a id="nav-title" href="https://eeplus.ntuee.org/home">My Blogger</a>
+    <div id="nav-main">
+      <form id="nav-search-form">
+        <input id="nav-search-input" type="text" placeholder="Search For Posts" />
+        <button type="submit" id="nav-search-submit">
+          &#x2315
+        </button>
+      </form>
+      <nav>
+        <ul id="nav-menu">
+          <li class="nav-link"><a href="https://eeplus.ntuee.org/home">New Post</a></li>
+          <li class="nav-link"><a href="https://eeplus.ntuee.org/home">Log In</a></li>
+          <li class="nav-link nav-signUp"><a href="https://eeplus.ntuee.org/home">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="post-card-container">
+    <div class="post-card">
+      <div class="post-content">
+        <img class="post-image" src="https://picsum.photos/1000/300?random=1" alt="post image" />
         <h1 class="post-title">post title</h1>
         <p class="post-description">
-          In this blog post, we embark on a journey through lush forests and
-          pristine lakes. Join me as we discover the hidden gems of the natural
-          world.
+          description
         </p>
-        <span class="post-author">made by <strong>John</strong></span>
-        <span class="post-date">date</span>
-        <a class="post-link" href="https://google.com">Read More</a>
       </div>
-      <div class="post-card">
-        <img
-          class="post-image"
-          src="https://picsum.photos/400/300"
-          alt="post image"
-        />
-        <h1 class="post-title">post title</h1>
-        <p class="post-description">
-          In this blog post, we embark on a journey through lush forests and
-          pristine lakes. Join me as we discover the hidden gems of the natural
-          world.
-        </p>
-        <span class="post-author">made by <strong>John</strong></span>
-        <span class="post-date">date</span>
-        <a class="post-link" href="https://google.com">Read More</a>
-      </div>
-      <div class="post-card">
-        <img
-          class="post-image"
-          src="https://picsum.photos/400/300"
-          alt="post image"
-        />
-        <h1 class="post-title">post title</h1>
-        <p class="post-description">
-          In this blog post, we embark on a journey through lush forests and
-          pristine lakes. Join me as we discover the hidden gems of the natural
-          world.
-        </p>
-        <span class="post-author">made by <strong>John</strong></span>
-        <span class="post-date">date</span>
-        <a class="post-link" href="https://google.com">Read More</a>
-      </div>
-      <div class="post-card">
-        <img
-          class="post-image"
-          src="https://picsum.photos/400/300"
-          alt="post image"
-        />
-        <h1 class="post-title">post title</h1>
-        <p class="post-description">
-          In this blog post, we embark on a journey through lush forests and
-          pristine lakes. Join me as we discover the hidden gems of the natural
-          world.
-        </p>
-        <span class="post-author">made by <strong>John</strong></span>
-        <span class="post-date">date</span>
-        <a class="post-link" href="https://google.com">Read More</a>
-      </div>
-      <div class="post-card">
-        <img
-          class="post-image"
-          src="https://picsum.photos/400/300"
-          alt="post image"
-        />
-        <h1 class="post-title">post title</h1>
-        <p class="post-description">
-          In this blog post, we embark on a journey through lush forests and
-          pristine lakes. Join me as we discover the hidden gems of the natural
-          world.
-        </p>
-        <span class="post-author">made by <strong>John</strong></span>
-        <span class="post-date">date</span>
-        <a class="post-link" href="https://google.com">Read More</a>
-      </div>
-      <div class="post-card">
-        <img
-          class="post-image"
-          src="https://picsum.photos/400/300"
-          alt="post image"
-        />
-        <h1 class="post-title">post title</h1>
-        <p class="post-description">
-          In this blog post, we embark on a journey through lush forests and
-          pristine lakes. Join me as we discover the hidden gems of the natural
-          world.
-        </p>
-        <span class="post-author">made by <strong>John</strong></span>
-        <span class="post-date">date</span>
-        <a class="post-link" href="https://google.com">Read More</a>
+      <div class="post-metadata">
+        <span class="post-author">posted by <strong>John</strong></span>
+        <span class="post-date">last updated: <strong>2023-9-12</strong></span>
+        <a class="post-link" href="https://eeplus.ntuee.org/home">Read More</a>
       </div>
     </div>
-  </body>
+    <div class="post-card">
+      <div class="post-content">
+        <img class="post-image" src="https://picsum.photos/1000/300?random=2" alt="post image" />
+        <h1 class="post-title">Exploring the Wonders of Nature</h1>
+        <p class="post-description">
+          In this blog post, we embark on a journey through lush forests and pristine lakes. Join me as we discover the
+          hidden gems of the natural world.
+        </p>
+      </div>
+      <div class="post-metadata">
+        <span class="post-author">posted by <strong>Alice Smith</strong></span>
+        <span class="post-date">last updated: <strong>2023-09-08</strong></span>
+        <a class="post-link" href="https://eeplus.ntuee.org/home">Read More</a>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-content">
+        <img class="post-image" src="https://picsum.photos/1000/300?random=3" alt="post image" />
+        <h1 class="post-title">The Art of Cooking</h1>
+        <p class="post-description">
+          I'm sharing my culinary adventures and favorite recipes in this post. From savory pasta dishes to
+          mouthwatering desserts, get ready to satisfy your taste buds.
+        </p>
+      </div>
+      <div class="post-metadata">
+        <span class="post-author">posted by <strong>Bob Johnson</strong></span>
+        <span class="post-date">last updated: <strong>2023-09-07</strong></span>
+        <a class="post-link" href="https://eeplus.ntuee.org/home">Read More</a>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-content">
+        <img class="post-image" src="https://picsum.photos/1000/300?random=4" alt="post image" />
+        <h1 class="post-title">A Guide to Fitness and Health</h1>
+        <p class="post-description">
+          Fitness is a lifestyle, and I'm here to guide you on your journey to a healthier you. Learn about workouts,
+          nutrition, and overall well-being in this blog.
+        </p>
+      </div>
+      <div class="post-metadata">
+        <span class="post-author">posted by <strong>Charlie Brown</strong></span>
+        <span class="post-date">last updated: <strong>2023-09-06</strong></span>
+        <a class="post-link" href="https://eeplus.ntuee.org/home">Read More</a>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-content">
+        <img class="post-image" src="https://picsum.photos/1000/300?random=5" alt="post image" />
+        <h1 class="post-title">The World of Books</h1>
+        <p class="post-description">
+          Books open doors to new worlds, and I'm here to share my literary adventures with you. Discover captivating
+          stories and insightful reviews in this blog.
+        </p>
+      </div>
+      <div class="post-metadata">
+        <span class="post-author">posted by <strong>Emily Davis</strong></span>
+        <span class="post-date">last updated: <strong>2023-09-04</strong></span>
+        <a class="post-link" href="https://eeplus.ntuee.org/home">Read More</a>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
