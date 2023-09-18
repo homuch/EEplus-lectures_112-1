@@ -1,2 +1,7 @@
-/*/*/node_modules
+**/node_modules
 .env
+
+**/practice/**
+
+!html-css-tutorial/practice/*.js
+!html-css-tutorial/practice/*.json
