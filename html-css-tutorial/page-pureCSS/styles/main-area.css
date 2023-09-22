@@ -10,7 +10,7 @@
 .post-card {
   /** variable width **/
   max-width: 50em;
-  min-width: min(20em, 100%);
+  min-width: min(20em, 100%); /* avoid card-width being larger than container */
 
   /** evenly stretched **/
   flex: 1;
@@ -54,8 +54,6 @@
   font-size: 2rem;
   text-align: center;
 
-  overflow: hidden;
-
   margin-top: 0.5em;
   margin-bottom: 0.15em;
 }
@@ -72,7 +70,7 @@
   overflow-y: scroll;
 }
 
-/** hide scroll bar **/
+/** hide the scroll bar **/
 .post-description::-webkit-scrollbar {
   display: none;
 }
@@ -97,10 +95,6 @@
   color: #333;
   margin-bottom: 0.5em;
   text-align: end;
-
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .post-link {
